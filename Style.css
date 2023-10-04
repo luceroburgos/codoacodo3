@@ -1,0 +1,313 @@
+*{
+box-sizing: border-box;
+font-family:unset;
+margin: 1;
+padding: 0;
+}
+
+/* Menu */
+.contenedor-header{
+
+                  background: rgb(157, 97, 139);
+                  position: fixed;
+                  width: 100%;
+                  top: 0;
+                  left: 0;
+                  z-index: 80%;
+}
+.contenedor-header header{
+                  max-width: 900px;
+                  margin: auto;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 5px 25px;
+}
+.contenedor-header header .logo a{
+                  font-family:unset;               
+                  font-size: 40px;
+                  color: rgb(0, 0, 0);
+                  text-decoration: none;
+                  font-family: fantasy;
+}
+.contenedor-header header ul{
+                  display: flex;
+                  list-style: none;
+}
+.contenedor-header header nav ul li a{
+  font-size: 23px;
+  text-align: none;
+  color: rgb(0, 0, 0);
+  margin: 0 15px;
+  padding: 3px;
+  transition: 1s;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor-header header nav ul li a:hover{
+  color:red;
+}
+.nav-responsive{
+  background-color: blueviolet;
+  color: antiquewhite;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* SECCION INICIO*/
+.inicio{
+background-image: url("https://img.freepik.com/vector-premium/coleccion-perros-pura-raza-detallados_195186-679.jpg");
+background-size: cover;
+height: 80vh;
+color:rgb(244, 89, 89);
+display: flex;
+justify-content:center;   
+align-items: center;
+}                  
+
+.inicio .contenedor-banner{
+                      display: block;
+                      background-color:rgb(4, 73, 20);
+                      align-items: center;
+                      padding: 10px;
+                      max-width: 300px;
+                      margin-top: auto;
+                      text-align: center;
+                      border-radius: 40px;
+}
+
+h1 {
+  color: #000000;
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.inicio .contenedor-banner img{
+                    
+                      display: block;
+                      align-items:center;
+                      margin-top: 90px;
+                      border: 3px solid blue;
+                      width: 99%;
+                      margin-top: auto;
+                     border-radius: 30%;
+                     height: 40vh;
+}
+.inicio .contenedor-banner h1{
+                      margin-top: 50 px;
+                      font-size: 37px;
+                      font-family:initial;
+}
+.inicio .contenedor-banner h2{
+                      font-size: 20px;
+                      font-family:initial;
+}
+.inicio .contenedor-banner .redes a{
+  justify-content: center;
+  color:darkblue; 
+  display:inline-block;  
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 30%;
+  width: 27px;
+  height: 27px;
+  margin: 5px 5px;
+  font-size: 20px;
+  transition: .3s;
+}          
+.inicio .contenedor-banner .redes a:hover{
+   background-color:rgb(14, 29, 238);
+}
+
+/*Seccion NOSOTROS*/
+.NOSOTROS {
+                        background-color: black;
+                        color: aquamarine;
+                        padding: 50px 20px;
+}
+.NOSOTROS .contenido-seccion{
+                        max-width: 1100px;
+                        margin: auto;
+}
+.NOSOTROS h2{
+           font-size: 46px; 
+           text-align: center;   
+           padding: 20px 0;         
+}
+.NOSOTROS .contenido-seccion p{
+                        font-size:20px ;
+                        font: 25px;
+                        line-height: 22px;
+}
+.NOSOTROS .contenido-seccion p span{
+                        font-size: 20px;
+                        color: rgb(22, 177, 48);
+                        font-weight: bold;
+}
+.NOSOTROS .fila{
+                        display: flex;
+}
+.NOSOTROS .fila .col{
+                        width: 60%;
+}
+.NOSOTROS .fila .col h3{
+                        font-size: 25px;
+                        margin-bottom: 25px;
+}
+.NOSOTROS .fila .col ul{
+                        list-style: none;
+}
+.NOSOTROS .fila .col ul li{
+                        margin: 10px 0;
+                        font-size: 18px;
+
+}
+.NOSOTROS .fila .col ul li span{
+                        background-color: blueviolet;
+                        padding: 3px;
+                        font-weight: bold;
+                        border-radius: 5px;
+}
+.NOSOTROS .fila .col .contenedor-intereses .interes{
+                        font-size: 18px;
+                        margin-bottom: 10px;
+}
+.NOSOTROS button{
+  cursor: pointer;
+  background-color:aqua;
+  width: fit-content;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+.NOSOTROS button .overlay {
+                        position: absolute;
+                        background-color:chartreuse;
+                        top: 0;
+                        left: 0;
+                        width: 0%;
+                        height: 100%;
+                        z-index: 1;
+                        transition: 1s;
+ }
+ .NOSOTROS button:hover .overlay{
+  width: 100%;
+ }
+
+/* SECCION SITIOS */
+.SITIOS{
+                        background-color:khaki;
+                        color:rgb(41, 28, 224);
+                        padding: 50px 20px;
+}
+.SITIOS .contenido-seccion {
+                        max-width: 1100px;
+                        margin: auto;
+}
+.SITIOS h2{
+                        font-size: 38px;
+                        text-align:center;
+                        padding: 20px 0;
+}
+.SITIOS .fila{
+                        display:flex;
+}
+.SITIOS .fila .col{
+  width: 49%;
+  padding: 0 20px;
+}
+.SITIOS .fila .item h4{
+  font-size: 20px;
+}
+.SITIOS .fila h3{
+  font-size: 24px;
+}
+.SITIOS .fila .item{
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color:floralwhite;
+  position: relative;
+}
+.SITIOS .fila .item h4{
+  color:blue;
+  font-size: 25;
+  font-weight: bold;
+}
+
+.SITIOS .fila .item .establecimiento{
+  color: black;
+  font-size: 20;
+  font-weight: bold;
+}
+.SITIOS.fila .izq{
+  border-right: 3px solid red;
+  margin-right: 22px;
+}
+.SITIOS .fila .der{
+  border-left: 3px solid red;
+  margin-left: 22px;
+}
+/* Seccion Contactos */
+.CONTACTOS .contenido-seccion{
+                        background-color: aquamarine;
+                        max-width: 1100px;
+                        margin: auto;
+                        
+}
+.CONTACTOS h2{
+                        font-size: 44px; 
+                        text-align: center;   
+                        padding: 20px 0; 
+}
+.CONTACTOS .fila{
+                display: flex;
+}
+.CONTACTOS .col{
+                        width: 90%;
+                        padding: 10px;
+                        position: relative;
+}
+
+/* Seccion Footer*/
+footer{
+                        background-color: #252A2E;
+                        color:cyan;
+                        padding: 30px 0 10px 0;
+                        text-align: center;
+                        position: relative;
+                        width: 100%;
+}
+footer .redes{
+                        margin-bottom: 25px;
+}
+footer .redes a{
+                        color:rgb(75, 66, 212); 
+                        display: inline-block;  
+                        text-decoration: none;
+                        border: 3px solid black;
+                        border-radius: 30%;
+                        width: 36px;
+                        height: 36px;
+                        margin: 10px 10px;
+                        font-size: 20px;
+                        transition: .3s;
+}
+footer .redes  a:hover{
+  background-color:aliceblue;
+}
+
+footer .arriba{
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        background-color: rgb(19, 209, 146);
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: -25px;
+                        border-radius: 50%;
+                        line-height: 50px;
+                        font-size: 18px;
+}
